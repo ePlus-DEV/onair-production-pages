@@ -25,7 +25,7 @@ Trusted source `main` pushes trigger the production publishing job after its pre
 
 ## Indexing and image policy
 
-**This GitHub Pages production artifact currently carries `noindex` metadata.** Production search indexing must not be enabled until a separately reviewed DNS/SEO cutover confirms canonical URLs, robots, sitemap, TLS, and analytics. Do not confuse a successful Pages push with a verified live DNS cutover.
+**Production is indexable.** The `main` Pages artifact uses `noIndex:false`, canonical URLs, structured data and `https://radio.eplus.dev/sitemap.xml`, and enables GA4 `G-ETDY41KBBJ` on the canonical production hostname. Staging (`develop`) remains `noindex` with no production GA4 or sitemap. DNS/TLS and cache routing must still be verified separately from a successful Pages push.
 
 Regular website builds use `npm run generate:site`, retaining station logos but excluding the large per-station Open Graph JPEG collection so the published site stays under the GitHub Pages **1 GB site limit**.
 
