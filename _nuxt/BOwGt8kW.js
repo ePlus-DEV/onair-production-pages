@@ -1,0 +1,1 @@
+import{$ as e}from"./C0IL3tRJ.js";function t(t=e()){let n=t;n&&!n.sp&&(n.sp=[])}export{t};
